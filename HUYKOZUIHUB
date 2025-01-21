@@ -1,1 +1,20 @@
-https://raw.githubusercontent.com/hoghuy/HUYKOZUIHUB/refs/heads/main/HUYKOZUIHUB.lua
+ local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/hoghuy/HUYKOZUIHUB/refs/heads/main/HUYKOZUIHUB')))()
+
+ local x = library:CreateWindow("Hack")
+
+
+ loacl b = x.library.CreateFolder("Local-player")
+
+ b:DestroyGui()
+
+ b:Box("speed","number",funtion(val) S = val end)
+ b:Box("Jump","number",funtion(val) J) = val end)
+ b:Box("fly","number",funtion(val) F(fly) end)
+
+ b:toggle("Speed",funtion(bool) getgenv() = bool Speed() end)
+ b:toggle("Jump",funtion(bool) getgenv() = bool Jump() end)
+ b:toggle("Fly",funtion(bool) getgenv() = bool Fly() end)
+
+
+
+
