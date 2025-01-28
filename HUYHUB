@@ -1,0 +1,101 @@
+local Window = MakeWindow({
+    Hub = {
+    Title = "HUYKOZUI",
+    Animation = "2001"
+    },
+   Key = {
+   KeySystem = false,
+   Title = "Key System",
+   Description = "chơi cố",
+   KeyLink = "",
+   Keys = {"1234"},
+   Notifi = {
+   Notifications = true,
+   CorrectKey = "Running the Script...",
+  Incorrectkey = "The key is incorrect",
+  CopyKeyLink = "Copied to Clipboard"
+ }
+}
+})
+
+  MinimizeButton({
+  Image = "http://www.roblox.com/asset/?id=128933802535491",
+  Size = {60, 60},
+  Color = Color3.fromRGB(10, 10, 10),
+  Corner = true,
+  Stroke = false,
+  StrokeColor = Color3.fromRGB(255, 0, 0)
+ })
+ 
+------ Tab
+local Tab1o = MakeTab({Name = "MAIN"})
+local Tab2o = MakeTab({Name = "QUEST&ITEM"})
+local Tab3o = MakeTab({Name = "FRUIT&raid"})
+local Tab4o = MakeTab({Name = "Race v4"})
+local Tab5o = MakeTab({Name = "travel"})
+local Tab6o = MakeTab({Name = "stats"})
+local Tab7o = MakeTab({Name = "shop"})
+local Tab8o = MakeTab({Name = "visual"})
+local Tab9o = MakeTab({Name = "misc"})
+
+
+-------TOGGLE 
+
+Toggle = AddToggle(Tab1o, {
+ Name = "a",
+ Default = false,
+ Callback = function()
+end
+})
+
+------- BUTTON
+
+AddButton(Tab1o, {
+Name = "Farm level",
+Callback = function()
+
+end
+})
+AddButton(Tab1o, {
+Name = "SCRIPT",
+Callback = function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+end
+})   AddButton(Tab1o, {
+Name = "2",
+Callback = function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+end
+})   AddButton(Tab1o, {
+Name = "3",
+Callback = function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+end
+})   AddButton(Tab1o, {
+Name = "4",
+Callback = function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+end
+})   AddButton(Tab1o, {
+Name = "FIX LAG",
+Callback = function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+end
+})
+----- Dropdown 
+
+Dropdown = AddDropdown(Tab1o, {
+Name = "a",
+Options = {"Test 1", "Test 2", "Test 3", "Test 4"},
+Default = "Melee",
+Callback = function()
+end
+})
+
+----- Section 
+
+Section = AddSection(Tab1o, {"a"})          
+
+----- Paragraph 
+               
+Paragraph = AddParagraph(Farm, {"a", ""})
