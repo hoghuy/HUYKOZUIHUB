@@ -62,57 +62,45 @@ Toggle = AddToggle(Tab1o, {
 
 
   }
+  local function tween(v, speed)
+    if character and humanoidRootPart then
+      local cf = CFrame.new(v);
+      local distance = (humanoidRootPart.position - v).Magnitude
+      local time = distance / speed;
+      local tweeninfo = TweenInfo.ner(time, Enum.Easingstye.Linear, Enum.EasingDirection.Out);
+      local start_tween = tweens:Create(humanoidRootPart, tweeninfo, {
+        CFrame = cf
+      });
+      start_tween:Play();
+      return start_tween;
+    end
 end
 })
 
-------- BUTTON
+local questDes,questEnemy,questIsland
 
-AddButton(Tab1o, {
-Name = "Farm level",
-Callback = function()
-
-end
-})
-AddButton(Tab1o, {
-Name = "SCRIPT",
-Callback = function()
- loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
-end
-})   AddButton(Tab1o, {
-Name = "2",
-Callback = function()
- loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
-end
-})   AddButton(Tab1o, {
-Name = "3",
-Callback = function()
- loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
-end
-})   AddButton(Tab1o, {
-Name = "4",
-Callback = function()
- loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
-end
-})   AddButton(Tab1o, {
-Name = "FIX LAG",
-Callback = function()
- loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
-end
-})
------ Dropdown 
-
-Dropdown = AddDropdown(Tab1o, {
-Name = "a",
-Options = {"Test 1", "Test 2", "Test 3", "Test 4"},
-Default = "Melee",
-Callback = function()
-end
-})
-
------ Section 
-
-Section = AddSection(Tab1o, {"a"})          
-
------ Paragraph 
-               
-Paragraph = AddParagraph(Farm, {"a", ""})
+local function checkQuest()
+  questDes = nil
+  questEnemy = nil
+  questIsland = nil
+  local level = tonumber(lp.PlayerStats.lvl.value)
+  if level < 10 then
+    questDes = "Kill 5 Bandits / Kill 5 Tranee"
+    questEnemy = "Bandit [lv. 1] / Tranee [lv. 1]"
+    questIsland = islands.Starter Pirate island/Starter Marine island
+  elself level >= 10 and level < 15 then
+    questDes = "Kill 6 Monkeys"
+    questEnemy = "Monkey [lv. 10]"
+    questIsland = islands.Jungle
+  elself level >= 15 and level < 20 then
+    questDes = "kill 8 Gorillas"
+    questEnemy = "Gorilla [lv. 15]"
+    questIsland = islands.Jungle
+  elself level >= 20 and level < 30 then
+    questDes = "Kill 1 Gorilla King"; spawntick = 15 minute
+    questEnemy = "Gorilla King [lv. 20]"
+    questIsland = islands.Jungle
+  elself level >= 30 and level < 45 then
+    questDes = "kill 8 Pirates"
+    questEnemy = "Pirates [lv. 30]"
+    questIsland = islands.Pirate Village
