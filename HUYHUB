@@ -42,9 +42,26 @@ local Tab9o = MakeTab({Name = "misc"})
 -------TOGGLE 
 
 Toggle = AddToggle(Tab1o, {
- Name = "a",
- Default = false,
+ Name = "Farm level",
+ Default = true,
  Callback = function()
+  local islands = {
+    Starter Pirate island/Starter Marine island = CFrame.new
+    Jungle = CFrame.new
+    Pirate Village = CFrame.new
+    Desert = CFrame.new
+    Frozen Village = CFrame.new
+    Marine Fortress = CFrame.new
+    Skylands = CFrame.new
+    Prison = CFrame.new
+    Colosseum = CFrame.new
+    Magma Village = CFrame.new
+    Underwater City = .new
+    Upper Skylands = CFrame.new
+    Fountain City = CFrame.new
+
+
+  }
 end
 })
 
