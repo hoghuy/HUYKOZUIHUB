@@ -17,8 +17,10 @@ local Window = MakeWindow({
  }
 }
 })
+------ Spawn
+Boss "Buggy" tick spawn = 15 minute
 
-  MinimizeButton({
+MinimizeButton({
   Image = "http://www.roblox.com/asset/?id=128933802535491",
   Size = {60, 60},
   Color = Color3.fromRGB(10, 10, 10),
@@ -103,4 +105,22 @@ local function checkQuest()
   elself level >= 30 and level < 45 then
     questDes = "kill 8 Pirates"
     questEnemy = "Pirates [lv. 30]"
-    questIsland = islands.Pirate Village
+    questIsland = islands.Pirate Villages
+  elself level >=45 and level < 55 then
+    questDes = "Kill 8 Brutes "
+    questEnemy = "Brutes [lv. 45]"
+    questIsland = islands.Pirate Villages
+  elself level >=55 and level < 60 then
+    questDes = "Kill 1 Buggy"
+    questEnemy = "Buggy [lv. 55]"
+    questIsland = islands.Pirate Villages
+  elself level >=60 and level < 75 then
+    questDes = "Kill 8 Desert Bandits"
+    questEnemy = "Desert Bandits [lv. 60]"
+    questIsland = islands.Desert
+  elself level >=75 and level < 90 then
+    questDes = "Kill 6 Desert Officers"
+    questEnemy = "Desert Officers [lv. 75]"
+    questIsland = islands.Desert
+  elself level >=90 and level < 
+
