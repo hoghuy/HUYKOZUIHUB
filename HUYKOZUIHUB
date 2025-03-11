@@ -119,7 +119,7 @@ getgenv().Configs = {
     },
     ["Theme"] = {
         ["Enable"] = false,
-        ["Hide Theme"] = true,
+        ["Hide Theme"] = false,
         ["Name"] = "HUY", -- HUY
         ["Custom Theme"] = {
             ["Enable"] = false, -- enable theme first
@@ -135,4 +135,4 @@ getgenv().Configs = {
     }
 }
 
-repeat task.wait(1) pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/hoghuy/HUYKOZUIHUB/refs/heads/main/HUYKOZUIHUB"))() end) until getgenv().Execution
+repeat task.wait(1) pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/bounty.lua"))() end) until getgenv().Execution
