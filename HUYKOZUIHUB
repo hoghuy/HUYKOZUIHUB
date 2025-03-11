@@ -118,7 +118,7 @@ getgenv().Configs = {
         }
     },
     ["Theme"] = {
-        ["Enable"] = false,
+        ["Enable"] = true,
         ["Hide Theme"] = false,
         ["Name"] = "HUY", -- HUY
         ["Custom Theme"] = {
