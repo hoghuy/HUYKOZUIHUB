@@ -1,5 +1,5 @@
 getgenv().Configs = {
-    ["Team"] = "Marines", -- Pirates/Marines
+    ["Team"] = "Pirates", -- Pirates/Marines
     ["Speed Tween"] = 350, -- Highly recommend 300 speed is good enough to anti security kick. maximum you can use is 350
     ["Auto turn on race v3"] = true,
     ["Auto turn on race v4"] = true,
@@ -98,7 +98,7 @@ getgenv().Configs = {
             }
         },
         ["Gun"] = {
-            ["Enable"] = true,
+            ["Enable"] = false,
             ["Delay"] = 1.5,
             ["Order"] = 2,
             ["Skills"] = {
@@ -119,8 +119,8 @@ getgenv().Configs = {
     },
     ["Theme"] = {
         ["Enable"] = true,
-        ["Hide Theme"] = false,
-        ["Name"] = "HUY", -- HUY
+        ["Hide Theme"] = true,
+        ["Name"] = "Gojo", -- Gojo
         ["Custom Theme"] = {
             ["Enable"] = false, -- enable theme first
             ["Text Color"] = Color3.fromRGB(231, 85, 88),
