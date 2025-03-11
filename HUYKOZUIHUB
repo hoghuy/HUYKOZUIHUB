@@ -10,8 +10,8 @@ getgenv().Configs = {
         ["Message"] = {"", "", "", ""}, -- Input your message here
     },
     ["Run When Low Health"] = {
-        ["Enable"] = false,
-        ["Health"] = 3000,
+        ["Enable"] = true,
+        ["Health"] = 4000,
         ["Come back"] = true
     },
     ["Region"] = "United States", -- Singapore, United States, Germany, France, India, ??? ... or "All"
@@ -98,7 +98,7 @@ getgenv().Configs = {
             }
         },
         ["Gun"] = {
-            ["Enable"] = false,
+            ["Enable"] = true,
             ["Delay"] = 1.5,
             ["Order"] = 2,
             ["Skills"] = {
@@ -120,7 +120,7 @@ getgenv().Configs = {
     ["Theme"] = {
         ["Enable"] = true,
         ["Hide Theme"] = true,
-        ["Name"] = "Gojo", -- Gojo
+        ["Name"] = "HUY", -- HUY
         ["Custom Theme"] = {
             ["Enable"] = false, -- enable theme first
             ["Text Color"] = Color3.fromRGB(231, 85, 88),
